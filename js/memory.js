@@ -5,6 +5,7 @@ class MemoryGame {
     this.pairsClicked = 0
     this.pairsGuessed = 0
   }
+
   shuffleCards() {
     let j, aux = 0 
     for(let i = this.cards.length - 1; i>= 1; i--){
@@ -25,6 +26,6 @@ class MemoryGame {
   }
 
   isFinished() {
-    
+    return this.pairsGuessed === this.cards.length / 2
   }
 }
